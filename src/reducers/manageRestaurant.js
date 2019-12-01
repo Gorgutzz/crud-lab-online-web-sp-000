@@ -10,7 +10,6 @@ const manageRestaurants = combineReducers({
 
 export default manageRestaurants;
 
-
 function restaurantsReducer(state = [], action) {
   switch (action.type) {
     case 'ADD_RESTAURANT':
