@@ -15,4 +15,13 @@ class ReviewsContainer extends Component {
   }
 }
 
-export default ReviewsContainer
+const mapStateToProps = state => ({
+  reviews: state.reviews
+})
+
+const mapDispatchToProps = dispatch => ({
+  addReview: review => dispatch({ type: 'ADD_REVIEW', review }),
+  delete: id => dispatch({ type: 'DELETE_REVIEW', id })
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewsContainer);
