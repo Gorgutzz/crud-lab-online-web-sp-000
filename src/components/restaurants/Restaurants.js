@@ -9,7 +9,7 @@ class Restaurants extends Component {
   render() {
     return(
       <ul>
-        Restaurants Component
+        {this.renderRestaurants()}
       </ul>
     );
   }
